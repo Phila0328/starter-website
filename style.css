@@ -52,6 +52,28 @@ body{
 }
 .nav a:hover{opacity:0.9}
 
+
+/*Features*/
+
+.features-header{
+  background:linear-gradient(90deg, rgba(15,76,129,0.95), rgba(7,38,64,0.95));
+  color:#fff;
+}
+.features.header-inner{
+  display:flex;
+  gap:var(--gap);
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  margin:0;
+  font-size:1.25rem;
+  letter-spacing:0.4px;
+}
+.logo span{font-weight:600; color:rgba(255,255,255,0.95)}
+
+
+
 /* hero */
 .hero{
   padding:48px 0;
