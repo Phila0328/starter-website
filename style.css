@@ -1,0 +1,123 @@
+:root{
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --text: #222;
+  --accent: #0f4c81;
+  --muted: #667085;
+  --radius: 12px;
+  --gap: 18px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.container{
+  max-width:1000px;
+  margin:0 auto;
+  padding:24px;
+}
+
+/* header */
+.site-header{
+  background:linear-gradient(90deg, rgba(15,76,129,0.95), rgba(7,38,64,0.95));
+  color:#fff;
+}
+.header-inner{
+  display:flex;
+  gap:var(--gap);
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  margin:0;
+  font-size:1.25rem;
+  letter-spacing:0.4px;
+}
+.logo span{font-weight:600; color:rgba(255,255,255,0.95)}
+
+.nav a{
+  color:rgba(255,255,255,0.95);
+  text-decoration:none;
+  margin-left:12px;
+  font-weight:500;
+}
+.nav a:hover{opacity:0.9}
+
+/* hero */
+.hero{
+  padding:48px 0;
+  background:transparent;
+  text-align:center;
+}
+.hero h2{
+  font-size:2rem;
+  margin:0 0 10px 0;
+}
+.hero p{color:var(--muted); margin:0 0 18px 0; max-width:720px; margin-left:auto; margin-right:auto;}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  margin-top:8px;
+}
+button{
+  border:0;
+  padding:10px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+#cta{
+  background:var(--accent);
+  color:#fff;
+}
+#scrollToFeatures{
+  background:transparent;
+  border:1px solid rgba(15,76,129,0.15);
+  color:var(--accent);
+}
+
+/* features */
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:18px;
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:0 6px 18px rgba(20,30,50,0.06);
+}
+.card h3{margin:0 0 8px 0}
+.card p{margin:0; color:var(--muted)}
+
+/* contact and footer */
+.contact{margin:28px 0 48px 0; text-align:center}
+.site-footer{
+  border-top:1px solid rgba(0,0,0,0.04);
+  padding:14px 0;
+  background:transparent;
+  text-align:center;
+  color:var(--muted);
+  font-size:0.95rem;
+}
+
+/* responsive */
+@media (max-width:800px){
+  .features{grid-template-columns:1fr; padding:0 12px}
+  .header-inner{flex-direction:column; gap:12px; text-align:center}
+  .nav a{margin-left:6px}
+  .hero h2{font-size:1.5rem}
+}
