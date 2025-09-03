@@ -9,3 +9,6 @@ document.getElementById('scrollToFeatures').addEventListener('click', function()
   const el = document.getElementById('features');
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+document.getElementById("cta").addEventListener("click", function() {
+  window.location.href = "index.html";
+});
