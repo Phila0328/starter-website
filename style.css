@@ -151,3 +151,18 @@ button{
   .nav a{margin-left:6px}
   .hero h2{font-size:1.5rem}
 }
+/* CSS for the button */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc; /* Blue color */
+  color: #fff;               /* White text */
+  text-decoration: none;     /* Remove underline */
+  border-radius: 5px;        /* Rounded corners */
+  font-weight: bold; 
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+}
